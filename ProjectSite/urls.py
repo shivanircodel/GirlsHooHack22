@@ -17,8 +17,12 @@ from django.contrib import admin
 from django.urls import include, path
 
 from pages.views import homepage_view
+from pages.views import LegalResources_view
+from pages.views import MedicalResources_view
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path('pages/', homepage_view, name='home'),
+    path('home/', homepage_view),
+    path('legal_resources/', LegalResources_view),
+    path('medical_resources/', MedicalResources_view),
 ]
