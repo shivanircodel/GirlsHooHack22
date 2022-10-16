@@ -1,52 +1,76 @@
 <!DOCTYPE html>
-
-{% extends 'base.html' %}
-
-{% block content %}
-<html>
+{% extends 'base.html' %} {% block content %}
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title></title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-    crossorigin="anonymous"
-  />
-    <link rel="icon" href="logo_purple.png">
-    <style>
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-</style> 
-<link rel="icon" href="">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
   </head>
-  <div id="wrapper">
-
+  <style>
+    * {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
+      background-image: url("../images/ProjectGarbh.png");
+    }
+    h1 {
+      margin-bottom: 10px;
+      text-align: center;
+      font-size: 60px;
+      color: #e8999b;
+    }
+    h2 {
+      color: #eab1a1;
+    }
+    .secondSection {
+      width: 600px;
+      float: right;
+      margin: 30px;
+    }
+    .firstSection {
+      width: 600px;
+      float: left;
+      margin: 30px;
+    }
+  </style>
   <body>
-    <body style = "background-image: url('retro5-bl.jpg')">
-    <div class="navcontainer">
-     <div class="navtext flexnav">
-       <!--<h3>fiat</h3>-->
-       <img src="" alt="logo" width="65" height="65"></div>
+    <h1>Project Garbh</h1>
+
+    <div class="firstSection">
+      <h2>About Us</h2>
+      <p>
+        Garbh is a web app built using the Django framework. With a wealth of
+        information about abortions and the procedures associated with them, it
+        serves as an awareness guide. A chatbot made with Dialogflow(A Google
+        Cloud API) has been integrated into the main page to answer all the
+        questions related to abortion so misinformation can be avoided. Through
+        web scraping, the website can direct the user to the nearest medical
+        resource available to them.
+      </p>
+    </div>
+
+    <div class="secondSection">
+      <h2>Raising Awareness:</h2>
+      <p>
+        On Friday, June 24, 2022, the US Supreme Court overturn Roe v. Wade, the
+        historic law that had declared the right to an abortion a constitutional
+        one in the country. In the US, more than 15 states have outlawed
+        abortion, and more than ten more are considering doing the same.
+        Multiple studies have shown that restricting abortion may result in
+        fewer women working and attending school. This inspired us to create
+        Garbh, which works as a guide for women who need to seek an abortion but
+        are unsure of how to proceed
+      </p>
       
     </div>
 
-   
-    <div class="container1"><div class="left flex">    
-    <h1 class="title"> <hr class="solid"></hr></h1>
-    
-    <p class="fw-bold" style="color:#EAB1A1; padding-left:18px">Educating people more on Roe V. Wade</p><p class="desc"></p>
-    
-    <div class="flexbutton"><a class="buttons flex2" href="home.html">Home Page </a><a class="buttons flex2" href="research.html">Research</a></br></a>
-    
-    
-    </div></div><div class="image flex"><br><br><br><img src= "" align="center" width="600px"/><div>
-    </div>
-    
-    <script src="script.js"></script>
-    </style>
-
+    <iframe
+      width="350"
+      height="430"
+      allow="microphone;"
+      src="https://console.dialogflow.com/api-client/demo/embedded/bd5c0397-c4d0-4170-afda-9904b869c4f3"
+    ></iframe>
   </body>
 </html>
 {% endblock %}
