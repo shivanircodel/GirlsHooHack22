@@ -19,10 +19,14 @@ from django.urls import include, path
 from pages.views import homepage_view
 from pages.views import LegalResources_view
 from pages.views import MedicalResources_view
+from pages.views import GetResourcesNearYou_view
+from pages.views import Financial_Resources
 
 urlpatterns = [
     path("admin/", admin.site.urls),
     path('home/', homepage_view),
     path('legal_resources/', LegalResources_view),
     path('medical_resources/', MedicalResources_view),
+    path('resources_near_you/', GetResourcesNearYou_view),
+    path('financial_resources/', Financial_Resources)
 ]

@@ -13,3 +13,9 @@ def LegalResources_view(request, *args, **kwargs):
 
 def MedicalResources_view(request, *args, **kwargs):
     return render(request, "MedicalResources.html", {})
+
+def GetResourcesNearYou_view(request, *args, **kwargs):
+    return render(request, "ResourcesNearYou.html", {})
+
+def Financial_Resources(request, *args, **kwargs):
+    return render(request, "FinancialResources.html", {})
